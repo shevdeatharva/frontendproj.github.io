@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/signupage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <title>Signup_page</title>
+</head>
+
+<body>
+    <ul class="nav nav-pills nav-fill" class="navbar navbar-dark bg-dark">
+        <li class="nav-item">
+            <a class="nav-link active" href="firstpage.html">Signup</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="secondpage.html">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="thirdpage.html">Detail</a>
+        </li>
+    </ul>
+
+    <form action="http://127.0.0.1:5500/detailpage.html" method="post">
+
+        <h1>Sign-Up</h1>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <br><br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="name" placeholder="Enter your email" required>
+        </div>
+        <br><br>
+        <div>
+            <label for="number"><phone-Number>Mobile-Number:</phone-Number></label>
+            <input type="tel" id="number" placeholder="Enter Mobile Number" pattern="[789][0-9]{9}" required>
+        </div>
+        <br><br>
+        <div>
+            <label for="psw">Password:</label>
+            <input type="password" id="psw" name="psw" placeholder="Password" !required>
+        </div>
+        <br><br>
+        <div>
+            <label for="psw">Confirm-Password:</label>
+            <input type="password" id="conpsw" placeholder="Confirm-password" required>
+            <p id="matching"></p>
+        </div>
+        <br><br>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+            <br><br>
+            <div class="invalid-feedback">
+                You must agree before submitting.
+            </div>
+        </div>
+        </div>
+        <br><br>
+        <div>
+            <button class="btn btn-primary" type="submit" onclick="clickCounter()">Submit</button>
+        </div>
+    </form>
+
+    </div>
+    </form>
+    <div id="message">
+        <p id="letter" class="invalid">A <b>lowercase</b> alphabet</p>
+        <p id="upper" class="invalid">A <b>Uppercase</b> alphabet</p>
+        <p id="length" class="invalid">password should be<b> 10 character</b> long</p>
+        <p id="digit" class="invalid">A <b> Number</b></p>
+    </div>
+</body>
+<script src="/signuppage.js">
+</script>
+<script src="/detailpage.js"></script>
+
+</html>
